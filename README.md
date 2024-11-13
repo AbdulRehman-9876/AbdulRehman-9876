@@ -10,10 +10,11 @@
 
 <!-- Introduction with GIF -->
   Welcome to my GitHub! I’m a software engineering student with a strong foundation in programming and full-stack development, seeking to make an impact through innovative and efficient solutions.
+  
 ---
  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AbdulRehman-9876&theme=github_dark" alt="Banner" width="8000" height="400"/>
 
-
+---
 ### 🖥️ Web Development Stack
 <p align="center">
   <img src="https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black"/>
@@ -46,8 +47,6 @@
   <img src="https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=mysql&logoColor=white"/>
 </p>
 
-
----
 
 ---
 ### 👨‍💻 About Me
