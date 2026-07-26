@@ -1,0 +1,29 @@
+name: Generate snake
+
+# Regenerates the contribution-snake SVG the README embeds. It is committed to
+# an `output` branch rather than main, so the profile history stays readable.
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: Platane/snk@v3
+        id: snake
+        with:
+          github_user_name: AbdulRehman-9876
+          outputs: dist/snake.svg
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
